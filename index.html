@@ -11,27 +11,40 @@
     <header>
       <div class="header__title">
         <h1 class="header__title__text">
-          Давайте узнаем Ваш Индекс Массы Тела!
+          Давайте узнаем индекс массы вашего тела!
         </h1>
       </div>
       <div class="header__subtitle">
         <p class="header__subtitle__text">
           Индекс массы тела — величина, позволяющая оценить степень соответствия
-          массы человека и его роста и тем самым, косвенно, оценить, является ли
-          масса недостаточной, нормальной, избыточной.
+          массы человека и его роста, и является ли
+          масса недостаточной, нормальной или избыточной.
         </p>
       </div>
     </header>
     <main>
+
       <section class="mainSection mainSection__preview">
-        <div class="mainSection__preview__weight"></div>
-        <div class="mainSection__preview__height"></div>
-        <div class="mainSection__preview__btn"></div>
+
+        <div class="mainSection__preview__weight">
+          <p>Ваш вес в кг:</p>
+          <input min="20" max="500" type="number" name="userWeight" placeholder="50" id="userWeight" />
+        </div>
+
+        <div class="mainSection__preview__height">
+          <p>Ваш рост в см:</p>
+          <input min="20" max="300" type="number" name="userHeight" placeholder="150" id="userHeight" />
+        </div>
+
+        <div class="mainSection__preview__btn">
+            <button class="btn-calculate">Узнать</button>
+        </div>
       </section>
-      <section class="mainSection mainSection__result">
-        <h2 class="mainSection__result__text">Ваш ИМТ:</h2>
-        <h2 class="mainSection__result__number">0</h2>
-        <h2 class="mainSection__result__comment">Так держать!</h2>
+
+      <section class="mainSection mainSection__result hidden">
+        <p class="mainSection__result__text">Ваш ИМТ:</p>
+        <p class="mainSection__result__number">0</p>
+        <p class="mainSection__result__comment">Так держать!</h2>
       </section>
     </main>
     <footer>

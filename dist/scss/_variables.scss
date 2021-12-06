@@ -6,3 +6,12 @@ $mainSectionBackground: linear-gradient(
 );
 $mainSectionFontColor: rgb(219, 219, 219);
 $bodyBackground: rgb(220, 220, 220);
+
+// mixins
+@mixin flexCenter($flexDirection) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
+}
