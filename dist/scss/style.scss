@@ -1,0 +1,58 @@
+@import 'resets', 'variables',
+  url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  background-color: $bodyBackground;
+}
+
+// LAYOUT
+header {
+  text-align: center;
+  margin: 4rem auto;
+  max-width: 700px;
+  .header__title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+}
+
+.mainSection {
+  padding: 2rem;
+  margin: 1.5rem auto;
+  background: $mainSectionBackground;
+  max-width: 700px;
+  &__preview {
+    @include flexCenter(column);
+    &__btn {
+      padding: 1rem;
+      .btn-calculate {
+        text-transform: uppercase;
+        border: none;
+        border-radius: 1rem;
+        background-color: white;
+        padding: 0.4rem;
+        font-size: 1.1rem;
+
+        &:hover {
+          background-color: darkgray;
+          color: white;
+          transition: all, 500ms;
+        }
+      }
+    }
+
+    &__result {
+      @include flexCenter(column);
+    }
+  }
+}
+// INTERACTIVE
+
+.hidden {
+  display: none;
+}
