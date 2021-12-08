@@ -10,6 +10,17 @@ const sectionResultNumber = document.querySelector(
 const sectionResultComment = document.querySelector(
   '.mainSection__result__comment'
 );
+let commentForResult;
+
+const commentBmi = function (userBmi) {
+  if (userBmi <= 18.5) {
+    commentForResult = 'Недостаток массы тела';
+  } else if (userBmi >= 18.5 && userBmi <= 24.9) {
+    commentForResult = 'Так держать';
+  } else {
+    commentForResult = 'Упс! Нужно узнать процент жировой массы';
+  }
+};
 
 // to calculate thr bmi
 document.querySelector('.btn-calculate').addEventListener('click', function () {
@@ -19,5 +30,7 @@ document.querySelector('.btn-calculate').addEventListener('click', function () {
   let userBmi = (userWeight / (userHeight * userHeight)).toFixed(2);
   sectionPreview.classList.add('hidden');
   sectionResult.classList.remove('hidden');
-  console.log(userBmi);
+  sectionResultNumber.textContent = userBmi;
+  commentBmi(userBmi);
+  sectionResultComment.textContent = commentForResult;
 });
