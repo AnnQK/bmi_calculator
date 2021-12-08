@@ -51,6 +51,17 @@ header {
     }
   }
 }
+
+footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+
+  .footer__text {
+    text-align: center;
+  }
+}
 // INTERACTIVE
 
 .hidden {

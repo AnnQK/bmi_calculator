@@ -92,6 +92,17 @@ header .header__title {
   gap: 0.7rem;
 }
 
+footer {
+  position: fixed;
+  bottom: 1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer .footer__text {
+  text-align: center;
+}
+
 .hidden {
   display: none;
 }
