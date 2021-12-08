@@ -14,9 +14,9 @@ let commentForResult;
 
 const commentBmi = function (userBmi) {
   if (userBmi <= 18.5) {
-    commentForResult = 'Недостаток массы тела';
+    commentForResult = 'Недостаток массы тела :(';
   } else if (userBmi >= 18.5 && userBmi <= 24.9) {
-    commentForResult = 'Так держать';
+    commentForResult = 'Так держать!';
   } else {
     commentForResult = 'Упс! Нужно узнать процент жировой массы';
   }
