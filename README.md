@@ -1,6 +1,6 @@
 # My BMI calculator with vanilla JavaScript
-
-## Tools:
+---
+### Tools:
 - HTML 
 - CSS, SASS, BEM 
 - JavaScript (DOM, Functions)
